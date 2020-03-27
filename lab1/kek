@@ -14,11 +14,11 @@ do
         name=`echo "${i##*/}"`	 # longest prefix removal
          
         size=`echo "$(du -b "$i" | awk '{print $1}')"`
-	data=` date -r "$i"` # stat -c %y "$i"  "$(du -b "$i" | awk '{print $6,$7,$8}')"
-	extension=`echo "${i##*.}"` # "$i" | awk -F "." "{print $2}"`
-		if [ ${i: -4} == ".mp4" ] # [ "$extension" ="*mp4" -o "*mp3"  ]  
-		then time=` ffprobe videoplayback.mp4 2>&1 | awk -F'[:,]' '/Duration/ {printf("%d:%d:%g", $2,$3,$4)}'`
-		else echo ""
+	data=` date -r "$i"` 			# stat -c %y "$i"  "$(du -b "$i" | awk '{print $6,$7,$8}')"
+	extension=`echo "${i##*.}"` 		# "$i" | awk -F "." "{print $2}"`
+		if [ ${i: -4} == ".mp4" ] 	# [ "$extension" ="*mp4" -o "*mp3"  ]  
+		then time=` ffprobe "$i" 2>&1 | awk -F'[:,]' '/Duration/ {printf("%d:%d:%g", $2,$3,$4)}'`
+		else time=" - "
 		fi
         # some other command can go here
 	echo $name,$extension,$size,$time,$data >> $output
