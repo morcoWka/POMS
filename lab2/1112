@@ -13,4 +13,4 @@ chmod +x make_popcorn.sh
 sudo apt install node-grunt-cli
 npm install -g grunt-cli bower
 ./make_popcorn.sh
-
+yarn config set yarn-offline-mirror ./node_modules/
