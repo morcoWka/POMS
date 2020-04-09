@@ -1,0 +1,16 @@
+#!/bin/bash
+sudo apt-get update
+sudo apt-get install git
+cd $HOME
+mkdir bek
+cd bek/
+git clone --single-branch -b master https://github.com/popcorn-official/popcorn-desktop
+cd popcorn-desktop/
+chmod +x make_popcorn.sh
+#sudo apt-get install Node.js
+#sudo apt-get install -y npm
+#sudo apt-get update 
+sudo apt install node-grunt-cli
+npm install -g grunt-cli bower
+./make_popcorn.sh
+
