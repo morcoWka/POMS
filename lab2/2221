@@ -1,0 +1,5 @@
+#!/bin/bash
+cd $HOME
+wget https://ci.popcorntime.app/job/Popcorn-Time-Desktop/200/artifact/build/popcorn-time_0.3.10-28112f678_amd64.deb
+sudo apt install $HOME/popcorn-time_0.3.10-28112f678_amd64.deb
+
