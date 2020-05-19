@@ -1,0 +1,46 @@
+#!/bin/bash
+rosservice call /reset
+rosservice call /turtle1/set_pen 255 255 255 3 1 
+rosservice call /turtle1/teleport_absolute 0.5 8 0
+rosservice call /turtle1/set_pen 255 255 255 3 0
+rosservice call /turtle1/teleport_absolute 1.5 8 0
+rosservice call /turtle1/teleport_absolute 1.5 7 0
+rosservice call /turtle1/teleport_absolute 0.5 6 0
+rosservice call /turtle1/teleport_absolute 1.5 6 0
+rosservice call /turtle1/set_pen 255 255 255 3 1
+rosservice call /turtle1/teleport_absolute 2 8 0
+rosservice call /turtle1/set_pen 255 255 255 3 0
+rosservice call /turtle1/teleport_absolute 2 7 0
+rosservice call /turtle1/teleport_absolute 3 7 0
+rosservice call /turtle1/set_pen 255 255 255 3 1 
+rosservice call /turtle1/teleport_absolute 3 8 0
+rosservice call /turtle1/set_pen 255 255 255 3 0
+rosservice call /turtle1/teleport_absolute 3 6 0
+rosservice call /turtle1/set_pen 255 255 255 3 1
+rosservice call /turtle1/teleport_absolute 4 8 0
+rosservice call /turtle1/set_pen 255 255 255 3 0
+rosservice call /turtle1/teleport_absolute 5 8 0
+rosservice call /turtle1/teleport_absolute 5 7 0
+rosservice call /turtle1/teleport_absolute 4 6 0
+rosservice call /turtle1/teleport_absolute 5 6 0
+rosservice call /turtle1/set_pen 255 255 255 3 1
+rosservice call /turtle1/teleport_absolute 7 8 0
+rosservice call /turtle1/set_pen 255 255 255 3 0
+rosservice call /turtle1/teleport_absolute 6 8 0
+rosservice call /turtle1/teleport_absolute 6 7 0
+rosservice call /turtle1/teleport_absolute 7 7 0
+rosservice call /turtle1/teleport_absolute 7 6 0
+rosservice call /turtle1/teleport_absolute 6 6 0
+rosservice call /turtle1/set_pen 255 255 255 3 1
+rosservice call /turtle1/teleport_absolute 9 8 0
+rosservice call /turtle1/set_pen 255 255 255 3 0
+rosservice call /turtle1/teleport_absolute 8 7 0
+rosservice call /turtle1/teleport_absolute 8 6 0
+rosservice call /turtle1/teleport_absolute 9 6 0
+rosservice call /turtle1/teleport_absolute 9 7 0
+rosservice call /turtle1/teleport_absolute 8 7 0
+rosservice call /turtle1/set_pen 255 255 255 3 1
+rosservice call /turtle1/teleport_absolute 9.5 7 0
+rosservice call /turtle1/set_pen 255 255 255 3 0
+rosservice call /turtle1/teleport_absolute 10 8 0
+rosservice call /turtle1/teleport_absolute 10 6 0
